@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+        <style>
+                .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      background: #1A1A1A;
+      padding: 12px 24px;
+      z-index: 100;
+    }
+
+    .navbar__logo-name {
+      color: #fff;
+      font-size: 48px;
+      font-weight: 900;
+    }
+
+    .navbar__logo-badge {
+      background: #FF2D78;
+      color: #fff;
+      font-size: 10px;
+      font-weight: 700;
+      padding: 3px 6px;
+      border-radius: 4px;
+      margin-left: 6px;
+      vertical-align: top;
+    }
+
+    .navbar__links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .navbar__link {
+      color: #fff;
+      font-weight: 700;
+    }
+
+    .navbar__link--active {
+      border-bottom: 3px solid #00C853;
+      padding-bottom: 2px;
+    }
+
+    .navbar__cast-btn {
+      color: #FF2D78;
+      font-weight: 900;
+      font-style: italic;
+    }
+
+    .navbar__avatar {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    
+        </style>
+  
+
+</head>
+<body>
+<div>
+    <nav class="navbar">
+
+  <div>
+    <span class="navbar__logo-name">YouCast</span>
+    <span class="navbar__logo-badge">NOW</span>
+  </div>
+
+  <div class="navbar__links">
+    <a class="navbar__link navbar__link--active">STREAMING</a>
+    <a class="navbar__link">DISCOVER</a>
+    <a class="navbar__cast-btn">CAST NOW</a>
+    <img class="navbar__avatar" src="img/avatars/user.jpg">
+  </div>
+
+</nav>
+</div>
+<div>
+    <div class="layout">
+
+  <aside class="sidebar">
+
+    <div class="sidebar__section">
+      <span class="sidebar__label">Trending Casters</span>
+
+      <div class="sidebar__caster">
+        <img class="sidebar__caster-avatar" src="img/avatars/aneesh815.jpg">
+        <div>
+          <div class="sidebar__caster-name">aneesh815</div>
+          <div class="sidebar__caster-tag">#movies</div>
+        </div>
+      </div>
+
+      <!-- repeat .sidebar__caster for each trending caster -->
+    </div>
+
+    <div class="sidebar__section">
+      <span class="sidebar__label">Hashtags</span>
+      <div class="sidebar__tag">#musicians</div>
+      <div class="sidebar__tag">#dance</div>
+      <!-- repeat .sidebar__tag for each hashtag -->
+    </div>
+
+    <div class="sidebar__section">
+      <span class="sidebar__label">Locations</span>
+      <div class="sidebar__tag">#downtown</div>
+      <div class="sidebar__tag">#beach</div>
+      <!-- repeat .sidebar__tag for each location -->
+    </div>
+
+    <div class="sidebar__section">
+      <span class="sidebar__label">Just For You</span>
+
+      <div class="sidebar__caster">
+        <img class="sidebar__caster-avatar" src="img/avatars/jimthejobber53.jpg">
+        <div>
+          <div class="sidebar__caster-name">jimthejobber53</div>
+          <div class="sidebar__caster-tag">#random</div>
+        </div>
+      </div>
+
+      <!-- repeat .sidebar__caster for each recommendation -->
+    </div>
+
+  </aside>
+
+  <!-- stream grid goes here -->
+
+</div>
+
+</div>
+
+    
+</body>
+</html>
